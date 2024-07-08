@@ -1,11 +1,11 @@
 {
-  "id": "2226a77d-92fb-474d-8262-afd7590efc00",
+  "id": "0588fcd7-e723-4f57-a9cc-173ae325557b",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "public.Link": {
-      "name": "Link",
+    "public.Students": {
+      "name": "Students",
       "schema": "",
       "columns": {
         "Id": {
@@ -14,11 +14,23 @@
           "primaryKey": true,
           "notNull": true
         },
-        "name": {
-          "name": "name",
+        "first_name": {
+          "name": "first_name",
           "type": "text",
           "primaryKey": false,
           "notNull": true
+        },
+        "last_name": {
+          "name": "last_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "notes": {
+          "name": "notes",
+          "type": "varchar[]",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {},

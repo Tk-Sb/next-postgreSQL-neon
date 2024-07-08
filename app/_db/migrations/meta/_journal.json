@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1720377149614,
-      "tag": "0000_whole_wilson_fisk",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1720406936014,
-      "tag": "0001_futuristic_gargoyle",
+      "when": 1720414075522,
+      "tag": "0000_curvy_black_tarantula",
       "breakpoints": true
     }
   ]

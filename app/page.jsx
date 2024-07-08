@@ -1,7 +1,9 @@
-import { addLink } from "./_db/db";
-export default function Home() {
+import { errorToJSON } from "next/dist/server/render";
+import { addStudent } from "./_db/seed";
 
-  // addLink()
+export default function Home() {
+  addStudent("tk", "sb", ["A in math", "B in coding", "F in history"])
+  
   return (
     <>
       <h1>Nice home page</h1>
