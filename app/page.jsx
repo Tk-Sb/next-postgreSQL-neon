@@ -1,4 +1,3 @@
-import { errorToJSON } from "next/dist/server/render";
 import { addStudent } from "./_db/seed";
 
 export default function Home() {
