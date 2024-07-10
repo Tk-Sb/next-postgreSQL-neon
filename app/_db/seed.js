@@ -1,15 +1,13 @@
 import { drizzle } from "drizzle-orm/neon-http"
 import { neon } from "@neondatabase/serverless"
 import { studentsTable } from "./schema"
+import { db } from "./db"
 
-const sql = neon(process.env.DATABASE_URL)
-const db = drizzle(sql)
-
-export async function addStudent(firstName, lastName, notes){
+export async function addStudent(firstName, lastName){
     const studentData = {
         firstName: firstName,
         lastName: lastName,
-        notes: notes
+        notes: []
     }
     await db.insert(studentsTable).values(studentData)
 }
