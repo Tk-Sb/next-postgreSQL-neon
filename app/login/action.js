@@ -1,6 +1,5 @@
 'use server'
 
-import { revalidatePath } from "next/cache"
 import { db } from "../_db/db"
 import { studentsTable } from "../_db/schema"
 import { z } from "zod"
