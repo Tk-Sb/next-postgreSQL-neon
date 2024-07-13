@@ -1,5 +1,5 @@
 {
-  "id": "0588fcd7-e723-4f57-a9cc-173ae325557b",
+  "id": "abfd100d-bd04-4fe8-b00b-51198c0151e4",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -8,8 +8,8 @@
       "name": "Students",
       "schema": "",
       "columns": {
-        "Id": {
-          "name": "Id",
+        "id": {
+          "name": "id",
           "type": "serial",
           "primaryKey": true,
           "notNull": true
@@ -31,6 +31,18 @@
           "type": "varchar[]",
           "primaryKey": false,
           "notNull": false
+        },
+        "username": {
+          "name": "username",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "password": {
+          "name": "password",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
         }
       },
       "indexes": {},

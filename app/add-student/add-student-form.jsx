@@ -1,12 +1,10 @@
 'use client'
 
-import React from "react"
 import { useActionState } from 'react'
-import { create } from "./action"
-
+import { createStudent } from "./action"
 
 export default function AddStudentForm(){
-    const [state, action, isPending] = useActionState(create, null);
+    const [state, action, isPending] = useActionState(createStudent, null);
 
     return (
         <>
